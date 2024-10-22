@@ -11,6 +11,29 @@
   }
 }
 
+@keyframes bounce {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(0, -25px, 0);
+  }
+}
+
+.smooth-bounce {
+  animation: bounce 1.4s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+.cursor {
+  @apply w-24 h-24 absolute bg-gradient-to-br from-sky-100 via-cyan-300 to-blue-400 bg-opacity-55 rounded-full blur-xl z-10 duration-200 ease-out;
+}
+
+.blur-card {
+  @apply bg-gray-300 bg-opacity-50 filter backdrop-blur p-5 rounded-3xl;
+}
+
 .sticky {
   @apply fixed z-[9999] bg-white/80 dark:bg-dark/80 transition;
   backdrop-filter: blur(5px);
