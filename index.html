@@ -194,20 +194,26 @@
         <div class="w-full px-4">
           <div class="hero-content wow fadeInUp" data-wow-delay=".2s">
             <div class="w-full grid grid-cols-1 lg:grid-cols-2 gap-6">
-              <div class="flex flex-col w-full h-full justify-center px-5">
-                <h1
-                  class="mb-10 text-3xl font-bold leading-snug text-white sm:text-4xl sm:leading-snug lg:text-5xl lg:leading-[1.2]">
+              <div class="flex flex-col w-full h-full justify-center px-5 order-2 lg:order-1">
+                <h1 class="mb-10 text-3xl font-bold leading-snug text-white sm:text-4xl sm:leading-snug lg:text-5xl lg:leading-[1.2] relative inline-block 
+                before:content-[''] before:absolute before:w-full before:scale-x-0 before:h-[2px] before:bottom-0 before:left-0 before:bg-white before:origin-left before:transition-transform before:duration-500 
+                hover:before:scale-x-100">
                   Smart City
                 </h1>
+
                 <p class="mb-9 text-base font-medium text-white sm:text-lg sm:leading-[1.44]">
-                  Smart city adalah konsep kota yang menggunakan teknologi digital dan data untuk meningkatkan kualitas
-                  hidup warganya, meningkatkan efisiensi layanan publik, serta mendorong pembangunan berkelanjutan.
-                  Teknologi seperti Internet of Things (IoT), kecerdasan buatan (AI), big data, dan jaringan komunikasi
+                  <span class="block">
+                    Smart city adalah konsep kota yang menggunakan teknologi digital dan data untuk meningkatkan kualitas
+                    hidup warganya, meningkatkan efisiensi layanan publik, serta mendorong pembangunan berkelanjutan.
+                  </span>
+                  <span class="hidden lg:block">
+                    Teknologi seperti Internet of Things (IoT), kecerdasan buatan (AI), big data, dan jaringan komunikasi
                   canggih digunakan untuk mengelola infrastruktur dan layanan kota seperti transportasi, energi, air,
                   pengelolaan limbah, dan keamanan.
+                  </span>
                 </p>
               </div>
-              <div class="container px-auto smooth-bounce ">
+              <div class="container px-auto smooth-bounce order-1 lg:order-2">
                 <spline-viewer url="https://prod.spline.design/J5D9jX2anRpEu44r/scene.splinecode"></spline-viewer>
               </div>
 
@@ -225,7 +231,6 @@
             </div>
             <div class="absolute -right-6 -top-6 z-[-1]">
               <img src="assets/images/white-dots.svg" alt="" srcset="">
-              </svg>
             </div>
           </div>
         </div>
@@ -1757,11 +1762,12 @@
           <div class="ud-contact-content-wrapper">
             <div class="ud-contact-title mb-12 lg:mb-[150px]">
               <span class="mb-6 block text-base font-medium text-dark dark:text-white">
-                CONTACT US
+                Kontak Kami
               </span>
-              <h2 class="max-w-[260px] text-[35px] font-semibold leading-[1.14] text-dark dark:text-white">
-                Let's talk about your problem.
-              </h2>
+              <h2 class="max-w-[360px] text-[35px] font-semibold leading-[1.14] text-dark dark:text-white">
+                Tanyakan saja masalahmu.
+                <span class="hidden sm:inline text-primary">Kami siap mendengarkan.</span>
+              </h2>              
             </div>
             <div class="mb-12 flex flex-wrap justify-between lg:mb-0">
               <div class="mb-8 flex w-[330px] max-w-full">
@@ -1775,10 +1781,10 @@
                 </div>
                 <div>
                   <h5 class="mb-[18px] text-lg font-semibold text-dark dark:text-white">
-                    Our Location
+                    Lokasi Kami
                   </h5>
                   <p class="text-base text-body-color dark:text-dark-6">
-                    401 Broadway, 24th Floor, Orchard Cloud View, London
+                    Jl. Thamrin No. 10, Lantai 24, Jakarta Pusat, DKI Jakarta, Indonesia
                   </p>
                 </div>
               </div>
@@ -1791,13 +1797,13 @@
                 </div>
                 <div>
                   <h5 class="mb-[18px] text-lg font-semibold text-dark dark:text-white">
-                    How Can We Help?
+                    Beri Tahu
                   </h5>
                   <p class="text-base text-body-color dark:text-dark-6">
-                    info@yourdomain.com
+                    visioncity.com
                   </p>
                   <p class="mt-1 text-base text-body-color dark:text-dark-6">
-                    contact@yourdomain.com
+                    visioncity@gmail.com
                   </p>
                 </div>
               </div>
@@ -1809,33 +1815,33 @@
             class="wow fadeInUp rounded-lg bg-white px-8 py-10 shadow-testimonial dark:bg-dark-2 dark:shadow-none sm:px-10 sm:py-12 md:p-[60px] lg:p-10 lg:px-10 lg:py-12 2xl:p-[60px]"
             data-wow-delay=".2s
               ">
-            <h3 class="mb-8 text-2xl font-semibold text-dark dark:text-white md:text-[28px] md:leading-[1.42]">
-              Send us a Message
+            <h3 class="text-center mb-8 text-2xl font-semibold text-dark dark:text-white md:text-[28px] md:leading-[1.42]">
+              Kirimkan Pesan
             </h3>
             <form>
               <div class="mb-[22px]">
-                <label for="fullName" class="mb-4 block text-sm text-body-color dark:text-dark-6">Full Name*</label>
-                <input type="text" name="fullName" placeholder="Adam Gelius"
+                <label for="fullName" class="mb-4 block text-sm text-body-color dark:text-dark-6">Nama Lengkap <span class="text-red-300">*</span> </label>
+                <input type="text" name="fullName" placeholder="Masukkan nama lengkap Anda"
                   class="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-body-color placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-dark-6" />
               </div>
               <div class="mb-[22px]">
-                <label for="email" class="mb-4 block text-sm text-body-color dark:text-dark-6">Email*</label>
-                <input type="email" name="email" placeholder="example@yourmail.com"
+                <label for="email" class="mb-4 block text-sm text-body-color dark:text-dark-6">Email <span class="text-red-300">*</span></label>
+                <input type="email" name="email" placeholder="namaanda@email.com"
                   class="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-body-color placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-dark-6" />
               </div>
               <div class="mb-[22px]">
-                <label for="phone" class="mb-4 block text-sm text-body-color dark:text-dark-6">Phone*</label>
-                <input type="text" name="phone" placeholder="+885 1254 5211 552"
+                <label for="phone" class="mb-4 block text-sm text-body-color dark:text-dark-6">No Telepon <span class="text-red-300">*</span></label>
+                <input type="text" name="phone" placeholder="Masukkan nomor telepon Anda"
                   class="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-body-color placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-dark-6" />
               </div>
               <div class="mb-[30px]">
-                <label for="message" class="mb-4 block text-sm text-body-color dark:text-dark-6">Message*</label>
-                <textarea name="message" rows="1" placeholder="type your message here"
+                <label for="message" class="mb-4 block text-sm text-body-color dark:text-dark-6">Pesan <span class="text-red-300">*</span></label>
+                <textarea name="message" rows="1" placeholder="Tuliskan pesan Anda di sini"
                   class="w-full resize-none border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-body-color placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-dark-6"></textarea>
-              </div>
-              <div class="mb-0">
+              </div>              
+              <div class="mb-0 flex justify-end">
                 <button type="submit"
-                  class="inline-flex items-center justify-center rounded-md bg-primary px-10 py-3 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-blue-dark">
+                  class="inline-flex items-center justify-center rounded-md bg-primary px-10 py-3 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-white hover:text-blue-dark ">
                   Send
                 </button>
               </div>
