@@ -14,9 +14,11 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
     "prettier": "^3.1.1",
     "prettier-plugin-tailwindcss": "^0.5.9",
-    "tailwindcss": "^3.3.5"
+    "tailwindcss": "^3.4.14"
   },
   "dependencies": {
     "@tailwindcss/line-clamp": "^0.4.4"
