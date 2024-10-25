@@ -610,6 +610,10 @@ body {
   border-width: 0;
 }
 
+.\!visible{
+  visibility: visible !important;
+}
+
 .visible{
   visibility: visible;
 }
@@ -766,10 +770,6 @@ body {
   margin: -1.25rem;
 }
 
-.m-4{
-  margin: 1rem;
-}
-
 .-mx-1{
   margin-left: -0.25rem;
   margin-right: -0.25rem;
@@ -790,6 +790,11 @@ body {
   margin-right: -1rem;
 }
 
+.mx-4{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .mx-8{
   margin-left: 2rem;
   margin-right: 2rem;
@@ -808,11 +813,6 @@ body {
 .my-\[6px\]{
   margin-top: 6px;
   margin-bottom: 6px;
-}
-
-.mx-4{
-  margin-left: 1rem;
-  margin-right: 1rem;
 }
 
 .-ml-1{
@@ -845,6 +845,10 @@ body {
 
 .mb-2\.5{
   margin-bottom: 0.625rem;
+}
+
+.mb-20{
+  margin-bottom: 5rem;
 }
 
 .mb-3{
@@ -951,10 +955,6 @@ body {
   margin-top: 6px;
 }
 
-.mb-20{
-  margin-bottom: 5rem;
-}
-
 .line-clamp-3{
   overflow: hidden;
   display: -webkit-box;
@@ -988,6 +988,10 @@ body {
 
 .grid{
   display: grid;
+}
+
+.contents{
+  display: contents;
 }
 
 .hidden{
@@ -1512,11 +1516,6 @@ body {
 
 .bg-white\/10{
   background-color: rgb(255 255 255 / 0.1);
-}
-
-.bg-black{
-  --tw-bg-opacity: 1;
-  background-color: rgb(33 43 54 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-20{
@@ -2087,6 +2086,11 @@ body {
   }
 }
 
+button.splide__pagination__page.is-active{
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 88 249 / var(--tw-bg-opacity));
+}
+
 .smooth-bounce {
   animation: bounce 1.4s;
   animation-direction: alternate;
@@ -2365,10 +2369,6 @@ body {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.hover\:rounded-xl:hover{
-  border-radius: 0.75rem;
-}
-
 .hover\:border-2:hover{
   border-width: 2px;
 }
@@ -2416,11 +2416,6 @@ body {
   --tw-bg-opacity: 0.9;
 }
 
-.hover\:text-3xl:hover{
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
 .hover\:text-\[\#0077B5\]:hover{
   --tw-text-opacity: 1;
   color: rgb(0 119 181 / var(--tw-text-opacity));
@@ -2451,28 +2446,12 @@ body {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.hover\:text-\[\#0077B5\]:hover{
-  --tw-text-opacity: 1;
-  color: rgb(0 119 181 / var(--tw-text-opacity));
-}
-
-.hover\:text-black:hover{
-  --tw-text-opacity: 1;
-  color: rgb(33 43 54 / var(--tw-text-opacity));
-}
-
 .hover\:underline:hover{
   text-decoration-line: underline;
 }
 
 .hover\:opacity-70:hover{
   opacity: 0.7;
-}
-
-.hover\:shadow-xl:hover{
-  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .hover\:drop-shadow-xl:hover{
@@ -2531,15 +2510,15 @@ body {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.group:hover .group-hover\:scale-125{
-  --tw-scale-x: 1.25;
-  --tw-scale-y: 1.25;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .group:hover .group-hover\:scale-110{
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.group:hover .group-hover\:scale-125{
+  --tw-scale-x: 1.25;
+  --tw-scale-y: 1.25;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -2567,11 +2546,6 @@ body {
   line-height: 1.75rem;
 }
 
-.group:hover .group-hover\:text-3xl{
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
 .group:hover .group-hover\:font-bold{
   font-weight: 700;
 }
@@ -2588,12 +2562,6 @@ body {
 
 .group:hover .group-hover\:opacity-100{
   opacity: 1;
-}
-
-.group:hover .group-hover\:shadow-xl{
-  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .dark\:block:is(.dark *){

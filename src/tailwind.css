@@ -19,6 +19,10 @@
   }
 }
 
+button.splide__pagination__page.is-active {
+  @apply bg-primary;
+}
+
 .smooth-bounce {
   animation: bounce 1.4s;
   animation-direction: alternate;
