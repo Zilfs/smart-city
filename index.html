@@ -396,6 +396,7 @@
               <i class="fa-solid fa-person-military-rifle text-white text-2xl"></i>
             </div>
             <h4 class="mb-3 text-xl font-bold text-dark dark:text-white">Sistem Keamanan</h4>
+    
             <p class="mb-8 text-body-color dark:text-dark-6 lg:mb-9 line-clamp-3 transition-all duration-300"
               id="keamananTextContent">
               Kamera cerdas, sensor, dan perangkat lunak analitik meningkatkan keamanan publik dengan pengawasan
@@ -404,6 +405,7 @@
               pencegahan lebih efektif, menciptakan lingkungan aman.
               <span id="keamananMoreText" class="hidden"> </span>
             </p>
+         
             <a href="javascript:void(0);" id="keamananReadMoreBtn"
               class="text-base font-medium text-dark hover:text-primary dark:text-white dark:hover:text-primary">Read
               More</a>
@@ -455,58 +457,75 @@
       <div class="-mx-4 flex flex-wrap justify-center wow fadeInUp">
         <div class="w-full px-4 md:w-1/2 lg:w-1/3">
           <div
-            class="relative z-10 mb-10 overflow-hidden rounded-xl bg-white px-8 py-10 shadow-pricing dark:bg-dark-2 sm:p-12 lg:px-6 lg:py-10 xl:p-14">
+            class="relative z-10 mb-10 overflow-hidden rounded-xl bg-white px-8 py-10 shadow-pricing dark:bg-dark-2 sm:p-12 lg:px-6 lg:py-10 xl:p-14"
+          >
             <h2 class="mb-11 text-4xl font-semibold text-dark dark:text-white xl:text-[42px] xl:leading-[1.21]">
               <span class="-ml-1 -tracking-[2px]">Masyarakat</span>
             </h2>
             <div class="mb-[50px]">
-
               <div class="flex flex-col gap-[14px]">
-                <p class="text-base text-body-color dark:text-dark-6 line-clamp-3">
-                  Warga merasakan manfaat langsung dari smart city melalui kenyamanan dalam mengakses berbagai layanan
-                  publik, seperti kesehatan, pendidikan, dan transportasi. Sistem yang terintegrasi memungkinkan
-                  penghematan biaya, baik dalam penggunaan energi maupun transportasi. Selain itu, layanan menjadi lebih
-                  cepat dan efisien, dengan informasi real-time yang memudahkan warga dalam merencanakan aktivitas
-                  sehari-hari, sehingga meningkatkan kualitas hidup secara keseluruhan.
+                <p class="text-base text-body-color dark:text-dark-6 line-clamp-3" id="text-content">
+                  Warga merasakan manfaat dari smart city melalui kemudahan dalam mengakses layanan publik seperti kesehatan, pendidikan, dan transportasi. Sistem terintegrasi memungkinkan penghematan biaya dalam penggunaan energi serta transportasi. Layanan yang cepat dan efisien dengan informasi real-time membantu warga merencanakan aktivitas sehari-hari, sehingga meningkatkan kualitas hidup secara keseluruhan.
                 </p>
               </div>
             </div>
             <a href="javascript:void(0)"
-              class="inline-block rounded-md bg-primary px-7 py-3 text-center text-base font-medium text-white transition hover:bg-blue-dark">
+               class="inline-block rounded-md bg-primary px-7 py-3 text-center text-base font-medium text-white transition hover:bg-blue-dark"
+               id="toggle-button" onclick="toggleReadMore()">
               Read More
             </a>
           </div>
+          <script>
+            function toggleReadMore() {
+              const textContent = document.getElementById("text-content");
+              const button = document.getElementById("toggle-button");
+          
+              if (textContent.classList.contains("line-clamp-3")) {
+                textContent.classList.remove("line-clamp-3");
+                button.textContent = "Read Less";
+              } else {
+                textContent.classList.add("line-clamp-3");
+                button.textContent = "Read More";
+              }
+            }
+          </script>
         </div>
 
 
         <div class="w-full px-4 md:w-1/2 lg:w-1/3">
           <div
-            class="relative z-10 mb-10 overflow-hidden rounded-xl bg-white px-8 py-10 shadow-pricing dark:bg-dark-2 sm:p-12 lg:px-6 lg:py-10 xl:p-14">
-
+            class="relative z-10 mb-10 overflow-hidden rounded-xl bg-white px-8 py-10 shadow-pricing dark:bg-dark-2 sm:p-12 lg:px-6 lg:py-10 xl:p-14"
+          >
             <h2 class="mb-11 text-4xl font-semibold text-dark dark:text-white xl:text-[42px] xl:leading-[1.21]">
-
               <span class="-ml-1 -tracking-[2px]">Pemerintah</span>
             </h2>
             <div class="mb-[50px]">
-
               <div class="flex flex-col gap-[14px]">
-                <p class="text-base text-body-color dark:text-dark-6 line-clamp-3">
-                  Pemerintah merasakan manfaat langsung dari smart city dengan meningkatkan efisiensi dalam pengelolaan
-                  sumber daya dan layanan publik. Dengan sistem terintegrasi, pemerintah dapat mengoptimalkan anggaran
-                  dan meminimalkan pemborosan, baik dalam pengelolaan energi maupun transportasi. Teknologi canggih
-                  memungkinkan analisis data real-time, sehingga pemerintah dapat merespons kebutuhan masyarakat dengan
-                  lebih cepat dan tepat. Ini juga mendukung perencanaan kota yang lebih baik, meningkatkan transparansi
-                  dalam pengambilan keputusan, dan memungkinkan kolaborasi yang lebih efektif antara berbagai lembaga.
-                  Secara keseluruhan, smart city membantu pemerintah menciptakan lingkungan yang lebih aman,
-                  berkelanjutan, dan responsif terhadap kebutuhan warga.
+                <p class="text-base text-body-color dark:text-dark-6 line-clamp-3" id="text-content-pemerintah">
+                  Pemerintah merasakan manfaat smart city melalui peningkatan efisiensi pengelolaan sumber daya dan layanan publik. Sistem terintegrasi memungkinkan optimasi anggaran dan pengurangan pemborosan. Teknologi real-time mendukung perencanaan yang lebih baik, transparansi keputusan, serta kolaborasi antarlembaga, menciptakan kota yang lebih aman, berkelanjutan, dan responsif terhadap kebutuhan warga.
                 </p>
               </div>
             </div>
             <a href="javascript:void(0)"
-              class="inline-block rounded-md bg-primary px-7 py-3 text-center text-base font-medium text-white transition hover:bg-blue-dark">
+               class="inline-block rounded-md bg-primary px-7 py-3 text-center text-base font-medium text-white transition hover:bg-blue-dark"
+               id="toggle-button-pemerintah" onclick="toggleReadMorePemerintah()">
               Read More
             </a>
           </div>
+          <script>
+            function toggleReadMorePemerintah() {
+              const textContent = document.getElementById("text-content-pemerintah");
+              const button = document.getElementById("toggle-button-pemerintah");
+          
+              if (textContent.classList.contains("line-clamp-3")) {
+                textContent.classList.remove("line-clamp-3");
+                button.textContent = "Read Less";
+              } else {
+                textContent.classList.add("line-clamp-3");
+                button.textContent = "Read More";
+              }
+            }
+          </script>
         </div>
       </div>
     </div>
