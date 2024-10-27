@@ -823,6 +823,16 @@ body {
   margin-bottom: 6px;
 }
 
+.my-2{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.my-10{
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
 .-ml-1{
   margin-left: -0.25rem;
 }
@@ -963,6 +973,10 @@ body {
   margin-top: 6px;
 }
 
+.mt-5{
+  margin-top: 1.25rem;
+}
+
 .line-clamp-3{
   overflow: hidden;
   display: -webkit-box;
@@ -1090,6 +1104,22 @@ body {
   height: 3.5rem;
 }
 
+.h-96{
+  height: 24rem;
+}
+
+.h-\[400px\]{
+  height: 400px;
+}
+
+.h-\[800px\]{
+  height: 800px;
+}
+
+.h-6{
+  height: 1.5rem;
+}
+
 .w-10{
   width: 2.5rem;
 }
@@ -1152,6 +1182,18 @@ body {
 
 .w-14{
   width: 3.5rem;
+}
+
+.w-\[500px\]{
+  width: 500px;
+}
+
+.w-\[300px\]{
+  width: 300px;
+}
+
+.w-6{
+  width: 1.5rem;
 }
 
 .max-w-\[160px\]{
@@ -1313,6 +1355,10 @@ body {
   flex-wrap: wrap;
 }
 
+.place-items-center{
+  place-items: center;
+}
+
 .items-end{
   align-items: flex-end;
 }
@@ -1335,6 +1381,10 @@ body {
 
 .justify-between{
   justify-content: space-between;
+}
+
+.justify-items-center{
+  justify-items: center;
 }
 
 .gap-1{
@@ -1375,6 +1425,10 @@ body {
 
 .gap-\[2px\]{
   gap: 2px;
+}
+
+.self-center{
+  align-self: center;
 }
 
 .overflow-hidden{
@@ -1763,6 +1817,16 @@ body {
   padding-bottom: 6px;
 }
 
+.px-\[500-x\]{
+  padding-left: 500-x;
+  padding-right: 500-x;
+}
+
+.px-\[500px\]{
+  padding-left: 500px;
+  padding-right: 500px;
+}
+
 .pb-10{
   padding-bottom: 2.5rem;
 }
@@ -1817,6 +1881,10 @@ body {
 
 .text-start{
   text-align: start;
+}
+
+.align-middle{
+  vertical-align: middle;
 }
 
 .text-2xl{
@@ -3022,6 +3090,10 @@ button.splide__pagination__page.is-active{
     order: 2;
   }
 
+  .lg\:col-span-2{
+    grid-column: span 2 / span 2;
+  }
+
   .lg\:-mx-2{
     margin-left: -0.5rem;
     margin-right: -0.5rem;
@@ -3231,6 +3303,16 @@ button.splide__pagination__page.is-active{
   .lg\:py-\[90px\]{
     padding-top: 90px;
     padding-bottom: 90px;
+  }
+
+  .lg\:px-\[500px\]{
+    padding-left: 500px;
+    padding-right: 500px;
+  }
+
+  .lg\:px-\[400px\]{
+    padding-left: 400px;
+    padding-right: 400px;
   }
 
   .lg\:pb-20{
