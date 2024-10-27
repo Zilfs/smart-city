@@ -770,6 +770,10 @@ body {
   margin: -1.25rem;
 }
 
+.m-5{
+  margin: 1.25rem;
+}
+
 .-mx-1{
   margin-left: -0.25rem;
   margin-right: -0.25rem;
@@ -1060,6 +1064,14 @@ body {
 
 .h-px{
   height: 1px;
+}
+
+.h-\[500px\]{
+  height: 500px;
+}
+
+.h-\[1000px\]{
+  height: 1000px;
 }
 
 .w-10{
@@ -2511,6 +2523,11 @@ button.splide__pagination__page.is-active{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.group:hover .group-hover\:rotate-12{
+  --tw-rotate: 12deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .group:hover .group-hover\:scale-110{
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
@@ -3092,6 +3109,10 @@ button.splide__pagination__page.is-active{
 
   .lg\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .lg\:border-0{
