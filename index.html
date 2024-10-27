@@ -60,7 +60,7 @@
                 <li class="group relative">
                   <a href="#benefits"
                     class="ud-menu-scroll mx-8 flex py-2 text-base font-medium text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10">
-                   Benefits
+                    Benefits
                   </a>
                 </li>
                 <li class="group relative">
@@ -125,7 +125,7 @@
                   </defs>
                 </svg>
               </span>
-            </label>  
+            </label>
           </div>
         </div>
       </div>
@@ -1539,7 +1539,8 @@
               Angka-Angka yang Mengejutkan!
             </h2>
             <p class="text-base text-body-color dark:text-dark-6">
-              Tahukah kamu? Smart city ternyata bisa menghemat energi hingga 30%. Selain itu, sudah ada 100 kota di dunia yang menerapkan konsep ini. Yuk, kita lihat data lengkapnya!
+              Tahukah kamu? Smart city ternyata bisa menghemat energi hingga 30%. Selain itu, sudah ada 100 kota di
+              dunia yang menerapkan konsep ini. Yuk, kita lihat data lengkapnya!
             </p>
           </div>
         </div>
@@ -1578,11 +1579,11 @@
             </h3>
             <canvas id="myChartDoughnut"></canvas>
           </div>
-          </div>
         </div>
-        
       </div>
-      
+
+    </div>
+
     </div>
   </section>
   <!-- ====== Chart Section End -->
@@ -1689,7 +1690,7 @@
     </div>
   </section>
   <!-- ====== Blog Section End -->
-  
+
   <!-- ====== Team Section Start -->
   <section id="team" class="overflow-hidden bg-gray-1 pb-12 pt-20 dark:bg-dark-2 lg:pb-[90px] lg:pt-[120px]">
     <div class="container mx-auto">
@@ -1808,7 +1809,7 @@
     </div>
   </section>
   <!-- ====== Team Section End -->
-  
+
 
   <!-- ====== Contact Start ====== -->
   <section id="contact" class="relative py-20 md:py-[120px]">
@@ -2390,275 +2391,275 @@
       },
     });
 
-  // Chart 1
-  let myChart_1;
-  function applyChartColors() {
-    const darkModeEnabled = document.documentElement.classList.contains('dark');
-    const colors = {
-      lineColor: darkModeEnabled ? '#ffffff' : '#000000',
-      pointBackground: '#3758f9',
-      backgroundColor: darkModeEnabled
-        ? 'rgba(255, 255, 255, 0.6)'
-        : 'rgba(54, 162, 235, 0.6)'
-    };
+    // Chart 1
+    let myChart_1;
+    function applyChartColors() {
+      const darkModeEnabled = document.documentElement.classList.contains('dark');
+      const colors = {
+        lineColor: darkModeEnabled ? '#ffffff' : '#000000',
+        pointBackground: '#3758f9',
+        backgroundColor: darkModeEnabled
+          ? 'rgba(255, 255, 255, 0.6)'
+          : 'rgba(54, 162, 235, 0.6)'
+      };
 
-    const myChartLine = document.getElementById('myChartLine');
-    if (myChart_1) myChart_1.destroy();
+      const myChartLine = document.getElementById('myChartLine');
+      if (myChart_1) myChart_1.destroy();
 
-    myChart_1 = new Chart(myChartLine, {
-      type: 'line',
-      data: {
-        labels: ['2019', '2020', '2021', '2022'],
-        datasets: [{
-          label: 'Pengaruh Smart City terhadap Penurunan Polusi Udara',
-          data: [15, 12, 10, 7],
-          backgroundColor: colors.pointBackground,
-          borderColor: colors.lineColor,
-          pointBackgroundColor: colors.pointBackground,
-          pointRadius: 6,
-          borderWidth: 2,
-          tension: 0.3
-        }]
-      },
-      options: {
-        responsive: true,
-        plugins: {
-          legend: {
-            labels: {
-              color: colors.lineColor
-            }
-          },
-          legend: {
-            display: false
-          },
-          tooltip: {
-            callbacks: {
-              label: function(tooltipItem) {
-                return tooltipItem.label + ': ' + tooltipItem.raw + '%';
+      myChart_1 = new Chart(myChartLine, {
+        type: 'line',
+        data: {
+          labels: ['2019', '2020', '2021', '2022'],
+          datasets: [{
+            label: 'Pengaruh Smart City terhadap Penurunan Polusi Udara',
+            data: [15, 12, 10, 7],
+            backgroundColor: colors.pointBackground,
+            borderColor: colors.lineColor,
+            pointBackgroundColor: colors.pointBackground,
+            pointRadius: 6,
+            borderWidth: 2,
+            tension: 0.3
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: {
+              labels: {
+                color: colors.lineColor
+              }
+            },
+            legend: {
+              display: false
+            },
+            tooltip: {
+              callbacks: {
+                label: function (tooltipItem) {
+                  return tooltipItem.label + ': ' + tooltipItem.raw + '%';
+                }
+              }
+            },
+            datalabels: {
+              color: colors.lineColor,
+              anchor: 'end',
+              align: 'top',
+              formatter: (value) => value + '%',
+              font: {
+                weight: 'bold'
               }
             }
           },
-          datalabels: {
-            color: colors.lineColor,
-            anchor: 'end',
-            align: 'top',
-            formatter: (value) => value + '%',
-            font: {
-              weight: 'bold'
-            }
-          }
-        },
-        scales: {
-          y: {
-            beginAtZero: true,
-            max: 20,
-            ticks: {
-              color: colors.lineColor
+          scales: {
+            y: {
+              beginAtZero: true,
+              max: 20,
+              ticks: {
+                color: colors.lineColor
+              },
+              grid: {
+                color: darkModeEnabled ? 'rgba(255, 255, 255, 0.2)' : 'rgba(0, 0, 0, 0.1)'
+              }
             },
-            grid: {
-              color: darkModeEnabled ? 'rgba(255, 255, 255, 0.2)' : 'rgba(0, 0, 0, 0.1)'
-            }
-          },
-          x: {
-            ticks: {
-              color: colors.lineColor
-            },
-            grid: {
-              color: darkModeEnabled ? 'rgba(255, 255, 255, 0.2)' : 'rgba(0, 0, 0, 0.1)'
-            }
-          }
-        },
-        animation: {
-          duration: 2000,
-          easing: 'easeOutQuart',
-          delay: (context) => context.dataIndex * 500
-        }
-      },
-      plugins: [ChartDataLabels]
-    });
-  }
-  applyChartColors();
-  const observer = new MutationObserver(applyChartColors);
-  observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
-
-
-  // Chart 2
-  let myChart_2;
-  function applyChartColors2() {
-    const darkModeEnabled = document.documentElement.classList.contains('dark');
-    const colors = {
-      lineColor: darkModeEnabled ? '#ffffff' : '#000000',
-      pointBackground: '#3758f9',
-      backgroundColor: darkModeEnabled
-        ? 'rgba(255, 255, 255, 0.6)'
-        : 'rgba(54, 162, 235, 0.6)'
-    };
-
-    const myChartPie = document.getElementById('myChartPie'); // Pastikan id canvas berbeda, misalnya myChartPie
-    if (myChart_2) myChart_2.destroy();
-
-    myChart_2 = new Chart(myChartPie, {
-      type: 'bar',
-      data: {
-        labels: ['2019', '2020', '2021', '2022'],
-        datasets: [{
-          label: 'Pengaruh Smart City terhadap Penurunan Polusi Udara (Chart 2)',
-          data: [10, 8, 6, 5], // Data berbeda sesuai kebutuhan chart kedua
-          backgroundColor: colors.pointBackground,
-          borderColor: colors.lineColor,
-          pointBackgroundColor: colors.pointBackground,
-          pointRadius: 6,
-          borderWidth: 2,
-          tension: 0.3
-        }]
-      },
-      options: {
-        responsive: true,
-        plugins: {
-          legend: {
-            labels: {
-              color: colors.lineColor
-            },
-            display: false
-          },
-          tooltip: {
-            callbacks: {
-              label: function(tooltipItem) {
-                return tooltipItem.label + ': ' + tooltipItem.raw + '%';
+            x: {
+              ticks: {
+                color: colors.lineColor
+              },
+              grid: {
+                color: darkModeEnabled ? 'rgba(255, 255, 255, 0.2)' : 'rgba(0, 0, 0, 0.1)'
               }
             }
           },
-          datalabels: {
-            color: colors.lineColor,
-            anchor: 'end',
-            align: 'top',
-            formatter: (value) => value + '%',
-            font: {
-              weight: 'bold'
-            }
+          animation: {
+            duration: 2000,
+            easing: 'easeOutQuart',
+            delay: (context) => context.dataIndex * 500
           }
         },
-        scales: {
-          y: {
-            beginAtZero: true,
-            max: 20,
-            ticks: {
-              color: colors.lineColor
-            },
-            grid: {
-              color: darkModeEnabled ? 'rgba(255, 255, 255, 0.2)' : 'rgba(0, 0, 0, 0.1)'
-            }
-          },
-          x: {
-            ticks: {
-              color: colors.lineColor
-            },
-            grid: {
-              color: darkModeEnabled ? 'rgba(255, 255, 255, 0.2)' : 'rgba(0, 0, 0, 0.1)'
-            }
-          }
+        plugins: [ChartDataLabels]
+      });
+    }
+    applyChartColors();
+    const observer = new MutationObserver(applyChartColors);
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+
+
+    // Chart 2
+    let myChart_2;
+    function applyChartColors2() {
+      const darkModeEnabled = document.documentElement.classList.contains('dark');
+      const colors = {
+        lineColor: darkModeEnabled ? '#ffffff' : '#000000',
+        pointBackground: '#3758f9',
+        backgroundColor: darkModeEnabled
+          ? 'rgba(255, 255, 255, 0.6)'
+          : 'rgba(54, 162, 235, 0.6)'
+      };
+
+      const myChartPie = document.getElementById('myChartPie'); // Pastikan id canvas berbeda, misalnya myChartPie
+      if (myChart_2) myChart_2.destroy();
+
+      myChart_2 = new Chart(myChartPie, {
+        type: 'bar',
+        data: {
+          labels: ['2019', '2020', '2021', '2022'],
+          datasets: [{
+            label: 'Pengaruh Smart City terhadap Penurunan Polusi Udara (Chart 2)',
+            data: [10, 8, 6, 5], // Data berbeda sesuai kebutuhan chart kedua
+            backgroundColor: colors.pointBackground,
+            borderColor: colors.lineColor,
+            pointBackgroundColor: colors.pointBackground,
+            pointRadius: 6,
+            borderWidth: 2,
+            tension: 0.3
+          }]
         },
-        animation: {
-          duration: 2000,
-          easing: 'easeOutQuart',
-          delay: (context) => context.dataIndex * 500
-        }
-      },
-      plugins: [ChartDataLabels]
-    });
-  }
-  applyChartColors2();
-  const observer2 = new MutationObserver(applyChartColors2);
-  observer2.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
-
-  // Chart 3
-  let myChart_3;
-  function applyChartColors3() {
-    const darkModeEnabled = document.documentElement.classList.contains('dark');
-    const colors = {
-      lineColor: darkModeEnabled ? '#ffffff' : '#000000',
-      pointBackground: '#3758f9',
-      backgroundColor: darkModeEnabled
-        ? 'rgba(255, 255, 255, 0.6)'
-        : 'rgba(54, 162, 235, 0.6)'
-    };
-
-    const myChartPie = document.getElementById('myChartDoughnut');
-    if (myChart_3) myChart_3.destroy();
-
-    myChart_3 = new Chart(myChartPie, {
-      type: 'doughnut',
-      data: {
-        labels: ['2019', '2020', '2021', '2022'],
-        datasets: [{
-          label: 'Pengaruh Smart City terhadap Penurunan Polusi Udara (Chart 2)',
-          data: [10, 8, 6, 5], // Data berbeda sesuai kebutuhan chart kedua
-          backgroundColor: colors.pointBackground,
-          borderColor: colors.lineColor,
-          pointBackgroundColor: colors.pointBackground,
-          pointRadius: 6,
-          borderWidth: 2,
-          tension: 0.3
-        }]
-      },
-      options: {
-        responsive: true,
-        plugins: {
-          legend: {
-            labels: {
-              color: colors.lineColor
+        options: {
+          responsive: true,
+          plugins: {
+            legend: {
+              labels: {
+                color: colors.lineColor
+              },
+              display: false
             },
-            display: false
-          },
-          tooltip: {
-            callbacks: {
-              label: function(tooltipItem) {
-                return tooltipItem.label + ': ' + tooltipItem.raw + '%';
+            tooltip: {
+              callbacks: {
+                label: function (tooltipItem) {
+                  return tooltipItem.label + ': ' + tooltipItem.raw + '%';
+                }
+              }
+            },
+            datalabels: {
+              color: colors.lineColor,
+              anchor: 'end',
+              align: 'top',
+              formatter: (value) => value + '%',
+              font: {
+                weight: 'bold'
               }
             }
           },
-          datalabels: {
-            color: colors.lineColor,
-            anchor: 'end',
-            align: 'top',
-            formatter: (value) => value + '%',
-            font: {
-              weight: 'bold'
-            }
-          }
-        },
-        scales: {
-          y: {
-            beginAtZero: true,
-            max: 20,
-            ticks: {
-              color: colors.lineColor
+          scales: {
+            y: {
+              beginAtZero: true,
+              max: 20,
+              ticks: {
+                color: colors.lineColor
+              },
+              grid: {
+                color: darkModeEnabled ? 'rgba(255, 255, 255, 0.2)' : 'rgba(0, 0, 0, 0.1)'
+              }
             },
-            grid: {
-              color: darkModeEnabled ? 'rgba(255, 255, 255, 0.2)' : 'rgba(0, 0, 0, 0.1)'
+            x: {
+              ticks: {
+                color: colors.lineColor
+              },
+              grid: {
+                color: darkModeEnabled ? 'rgba(255, 255, 255, 0.2)' : 'rgba(0, 0, 0, 0.1)'
+              }
             }
           },
-          x: {
-            ticks: {
-              color: colors.lineColor
-            },
-            grid: {
-              color: darkModeEnabled ? 'rgba(255, 255, 255, 0.2)' : 'rgba(0, 0, 0, 0.1)'
-            }
+          animation: {
+            duration: 2000,
+            easing: 'easeOutQuart',
+            delay: (context) => context.dataIndex * 500
           }
         },
-        animation: {
-          duration: 2000,
-          easing: 'easeOutQuart',
-          delay: (context) => context.dataIndex * 500
-        }
-      },
-      plugins: [ChartDataLabels]
-    });
-  }
-  applyChartColors3();
-  const observer3 = new MutationObserver(applyChartColors3);
-  observer3.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+        plugins: [ChartDataLabels]
+      });
+    }
+    applyChartColors2();
+    const observer2 = new MutationObserver(applyChartColors2);
+    observer2.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+
+    // Chart 3
+    let myChart_3;
+    function applyChartColors3() {
+      const darkModeEnabled = document.documentElement.classList.contains('dark');
+      const colors = {
+        lineColor: darkModeEnabled ? '#ffffff' : '#000000',
+        pointBackground: '#3758f9',
+        backgroundColor: darkModeEnabled
+          ? 'rgba(255, 255, 255, 0.6)'
+          : 'rgba(54, 162, 235, 0.6)'
+      };
+
+      const myChartPie = document.getElementById('myChartDoughnut');
+      if (myChart_3) myChart_3.destroy();
+
+      myChart_3 = new Chart(myChartPie, {
+        type: 'doughnut',
+        data: {
+          labels: ['2019', '2020', '2021', '2022'],
+          datasets: [{
+            label: 'Pengaruh Smart City terhadap Penurunan Polusi Udara (Chart 2)',
+            data: [10, 8, 6, 5], // Data berbeda sesuai kebutuhan chart kedua
+            backgroundColor: colors.pointBackground,
+            borderColor: colors.lineColor,
+            pointBackgroundColor: colors.pointBackground,
+            pointRadius: 6,
+            borderWidth: 2,
+            tension: 0.3
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: {
+              labels: {
+                color: colors.lineColor
+              },
+              display: false
+            },
+            tooltip: {
+              callbacks: {
+                label: function (tooltipItem) {
+                  return tooltipItem.label + ': ' + tooltipItem.raw + '%';
+                }
+              }
+            },
+            datalabels: {
+              color: colors.lineColor,
+              anchor: 'end',
+              align: 'top',
+              formatter: (value) => value + '%',
+              font: {
+                weight: 'bold'
+              }
+            }
+          },
+          scales: {
+            y: {
+              beginAtZero: true,
+              max: 20,
+              ticks: {
+                color: colors.lineColor
+              },
+              grid: {
+                color: darkModeEnabled ? 'rgba(255, 255, 255, 0.2)' : 'rgba(0, 0, 0, 0.1)'
+              }
+            },
+            x: {
+              ticks: {
+                color: colors.lineColor
+              },
+              grid: {
+                color: darkModeEnabled ? 'rgba(255, 255, 255, 0.2)' : 'rgba(0, 0, 0, 0.1)'
+              }
+            }
+          },
+          animation: {
+            duration: 2000,
+            easing: 'easeOutQuart',
+            delay: (context) => context.dataIndex * 500
+          }
+        },
+        plugins: [ChartDataLabels]
+      });
+    }
+    applyChartColors3();
+    const observer3 = new MutationObserver(applyChartColors3);
+    observer3.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
 
   </script>
 </body>
