@@ -758,6 +758,10 @@ body {
   z-index: 999;
 }
 
+.z-30{
+  z-index: 30;
+}
+
 .order-1{
   order: 1;
 }
