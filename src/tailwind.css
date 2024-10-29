@@ -1,13 +1,32 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer  base {
+@layer base {
   body {
-    font-family: "Inter", sans-serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
   }
+}
+
+@keyframes bounce {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(0, -25px, 0);
+  }
+}
+
+button.splide__pagination__page.is-active {
+  @apply bg-primary;
+}
+
+.smooth-bounce {
+  animation: bounce 1.4s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
 }
 
 .sticky {
