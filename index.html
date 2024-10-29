@@ -143,7 +143,10 @@
                 </p>
               </div>
               <div class="container px-auto smooth-bounce order-1 lg:order-2">
-                <spline-viewer url="https://prod.spline.design/J5D9jX2anRpEu44r/scene.splinecode"></spline-viewer>
+
+                <spline-viewer hint loading-anim-type="spinner-small-light"
+                  url="https://prod.spline.design/J5D9jX2anRpEu44r/scene.splinecode"></spline-viewer>
+
               </div>
 
             </div>
@@ -196,10 +199,14 @@
                 class="absolute left-0 top-0 -z-[1] mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-[14px] bg-primary bg-opacity-20 duration-300 group-hover:rotate-45"></span>
               <i class="fa-solid fa-road-bridge text-white text-2xl"></i>
             </div>
-        
+
             <h4 class="mb-3 text-xl font-bold text-dark dark:text-white">Infrastruktur Digital</h4>
-            <p id="textContent" class="mb-8 text-body-color dark:text-dark-6 lg:mb-9 line-clamp-3 transition-all ease-in-out duration-1000 overflow-hidden max-h-[4.5rem]">
-              Pemanfaatan jaringan internet berkecepatan tinggi dan perangkat IoT (Internet of Things) memungkinkan pengelolaan sumber daya kota yang lebih efisien, mendukung konsep smart city. Data dari sensor dan perangkat IoT dapat dikumpulkan dan dianalisis secara real-time, memungkinkan pengaturan dinamis terhadap lalu lintas, penggunaan energi, pengelolaan limbah, dan pemantauan lingkungan.
+            <p id="textContent"
+              class="mb-8 text-body-color dark:text-dark-6 lg:mb-9 line-clamp-3 transition-all ease-in-out duration-1000 overflow-hidden max-h-[4.5rem]">
+              Pemanfaatan jaringan internet berkecepatan tinggi dan perangkat IoT (Internet of Things) memungkinkan
+              pengelolaan sumber daya kota yang lebih efisien, mendukung konsep smart city. Data dari sensor dan
+              perangkat IoT dapat dikumpulkan dan dianalisis secara real-time, memungkinkan pengaturan dinamis terhadap
+              lalu lintas, penggunaan energi, pengelolaan limbah, dan pemantauan lingkungan.
               <span id="moreText" class="hidden"></span>
             </p>
             <a href="javascript:void(0);" id="readMoreBtn"
@@ -211,7 +218,7 @@
             document.getElementById('readMoreBtn').addEventListener('click', function () {
               const moreText = document.getElementById('moreText');
               const textContent = document.getElementById('textContent');
-          
+
               if (moreText.classList.contains('hidden')) {
                 moreText.classList.remove('hidden'); // Menampilkan teks tambahan
                 textContent.classList.remove('max-h-[4.5rem]', 'line-clamp-3'); // Menghapus batasan tinggi dan baris
@@ -235,17 +242,18 @@
                 class="absolute left-0 top-0 -z-[1] mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-[14px] bg-primary bg-opacity-20 duration-300 group-hover:rotate-45"></span>
               <i class="fa-solid fa-truck-plane text-white text-2xl"></i>
             </div>
-            
+
             <h4 class="mb-3 text-xl font-bold text-dark dark:text-white">Transportasi Cerdas</h4>
-            
-            <p id="transportTextContent" class="mb-8 text-body-color dark:text-dark-6 lg:mb-9 line-clamp-3 transition-all ease-in-out duration-1000 overflow-hidden max-h-[4.5rem]">
+
+            <p id="transportTextContent"
+              class="mb-8 text-body-color dark:text-dark-6 lg:mb-9 line-clamp-3 transition-all ease-in-out duration-1000 overflow-hidden max-h-[4.5rem]">
               Sistem transportasi modern memanfaatkan teknologi untuk mengurangi kemacetan dan meningkatkan mobilitas,
               misalnya dengan transportasi umum terintegrasi. Berbagai moda transportasi seperti bus, kereta, sepeda
               sewa yang terhubung dalam satu platform, dilengkapi informasi real-time untuk memudahkan penumpang beralih
               antar moda dan mengatur perjalanan lebih efisien.
               <span id="transportMoreText" class="hidden"></span>
             </p>
-        
+
             <a href="javascript:void(0);" id="transportReadMoreBtn"
               class="text-base font-medium text-dark hover:text-primary dark:text-white dark:hover:text-primary">
               Read More
@@ -255,7 +263,7 @@
             document.getElementById('transportReadMoreBtn').addEventListener('click', function () {
               const moreText = document.getElementById('transportMoreText');
               const textContent = document.getElementById('transportTextContent');
-          
+
               if (moreText.classList.contains('hidden')) {
                 moreText.classList.remove('hidden'); // Menampilkan teks tambahan
                 textContent.classList.remove('max-h-[4.5rem]', 'line-clamp-3'); // Menghapus batasan tinggi dan baris
@@ -270,9 +278,9 @@
             });
           </script>
         </div>
-        
-        
-        
+
+
+
         <div class="w-full px-4 md:w-1/2 lg:w-1/4">
           <div class="wow fadeInUp group mb-12" data-wow-delay=".15s">
             <div
@@ -282,15 +290,20 @@
               <i class="fa-solid fa-charging-station text-white text-2xl"></i>
             </div>
             <h4 class="mb-3 text-xl font-bold text-dark dark:text-white">Pengelolaan Energi</h4>
-        
-            <p id="energiTextContent" class="mb-8 text-body-color dark:text-dark-6 lg:mb-9 line-clamp-3 transition-all ease-in-out duration-1000 overflow-hidden max-h-[4.5rem]">
-              Sistem energi efisien menggunakan teknologi pintar untuk memantau dan mengontrol penggunaan energi real-time,
-              mengoptimalkan distribusi. Sensor dan IoT mengumpulkan data konsumsi listrik untuk analisis pola. Teknologi ini
-              memungkinkan pengelolaan energi yang lebih baik, mengurangi pemborosan, dan mendeteksi masalah sebelum terjadi kerugian besar.
+
+            <p id="energiTextContent"
+              class="mb-8 text-body-color dark:text-dark-6 lg:mb-9 line-clamp-3 transition-all ease-in-out duration-1000 overflow-hidden max-h-[4.5rem]">
+              Sistem energi efisien menggunakan teknologi pintar untuk memantau dan mengontrol penggunaan energi
+              real-time,
+              mengoptimalkan distribusi. Sensor dan IoT mengumpulkan data konsumsi listrik untuk analisis pola.
+              Teknologi ini
+              memungkinkan pengelolaan energi yang lebih baik, mengurangi pemborosan, dan mendeteksi masalah sebelum
+              terjadi kerugian besar.
               <span id="energiMoreText" class="hidden"></span>
             </p>
-        
-            <a href="javascript:void(0);" id="energiReadMoreBtn" class="text-base font-medium text-dark hover:text-primary dark:text-white dark:hover:text-primary">
+
+            <a href="javascript:void(0);" id="energiReadMoreBtn"
+              class="text-base font-medium text-dark hover:text-primary dark:text-white dark:hover:text-primary">
               Read More
             </a>
           </div>
@@ -298,7 +311,7 @@
             document.getElementById('energiReadMoreBtn').addEventListener('click', function () {
               const moreText = document.getElementById('energiMoreText');
               const textContent = document.getElementById('energiTextContent');
-          
+
               if (moreText.classList.contains('hidden')) {
                 moreText.classList.remove('hidden'); // Menampilkan teks tambahan
                 textContent.classList.remove('max-h-[4.5rem]', 'line-clamp-3'); // Menghapus batasan tinggi dan baris
@@ -313,9 +326,9 @@
             });
           </script>
         </div>
-        
-        
-        
+
+
+
 
 
         <div class="w-full px-4 md:w-1/2 lg:w-1/4">
@@ -326,17 +339,21 @@
                 class="absolute left-0 top-0 -z-[1] mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-[14px] bg-primary bg-opacity-20 duration-300 group-hover:rotate-45"></span>
               <i class="fa-solid fa-person-military-rifle text-white text-2xl"></i>
             </div>
-        
+
             <h4 class="mb-3 text-xl font-bold text-dark dark:text-white">Sistem Keamanan</h4>
-        
-            <p id="keamananTextContent" class="mb-8 text-body-color dark:text-dark-6 lg:mb-9 line-clamp-3 transition-all ease-in-out duration-1000 overflow-hidden max-h-[4.5rem]">
-              Kamera cerdas, sensor, dan perangkat lunak analitik meningkatkan keamanan publik dengan pengawasan otomatis dan respons cepat.
-              Kamera dengan pengenalan wajah dan sensor lingkungan mendeteksi ancaman, sementara perangkat lunak menganalisis data untuk laporan instan. 
+
+            <p id="keamananTextContent"
+              class="mb-8 text-body-color dark:text-dark-6 lg:mb-9 line-clamp-3 transition-all ease-in-out duration-1000 overflow-hidden max-h-[4.5rem]">
+              Kamera cerdas, sensor, dan perangkat lunak analitik meningkatkan keamanan publik dengan pengawasan
+              otomatis dan respons cepat.
+              Kamera dengan pengenalan wajah dan sensor lingkungan mendeteksi ancaman, sementara perangkat lunak
+              menganalisis data untuk laporan instan.
               Teknologi ini memungkinkan tindakan pencegahan lebih efektif, menciptakan lingkungan aman.
               <span id="keamananMoreText" class="hidden"> Teks tambahan yang muncul saat "Read More" diklik.</span>
             </p>
-        
-            <a href="javascript:void(0);" id="keamananReadMoreBtn" class="text-base font-medium text-dark hover:text-primary dark:text-white dark:hover:text-primary">
+
+            <a href="javascript:void(0);" id="keamananReadMoreBtn"
+              class="text-base font-medium text-dark hover:text-primary dark:text-white dark:hover:text-primary">
               Read More
             </a>
           </div>
@@ -344,7 +361,7 @@
             document.getElementById('keamananReadMoreBtn').addEventListener('click', function () {
               const moreText = document.getElementById('keamananMoreText');
               const textContent = document.getElementById('keamananTextContent');
-          
+
               if (moreText.classList.contains('hidden')) {
                 moreText.classList.remove('hidden'); // Menampilkan teks tambahan
                 textContent.classList.remove('max-h-[4.5rem]', 'line-clamp-3'); // Menghapus batasan tinggi dan baris
@@ -359,8 +376,8 @@
             });
           </script>
         </div>
-        
-        
+
+
 
       </div>
     </div>
@@ -804,7 +821,8 @@
             <canvas id="myChartLine"></canvas>
             <h3 class="mt-4 text-base font-semibold text-dark dark:text-white">
               <span class="relative inline-block">
-                <a href="https://www.smartcitiesworld.net/governance-and-citizen/air-quality-trend-report-2024" class=""> Source </a>
+                <a href="https://www.smartcitiesworld.net/governance-and-citizen/air-quality-trend-report-2024"
+                  class=""> Source </a>
               </span>
             </h3>
           </div>
@@ -836,7 +854,8 @@
             <canvas id="myChartDoughnut"></canvas>
             <h3 class="mt-4 text-base font-semibold text-dark dark:text-white">
               <span class="relative inline-block">
-                <a href="https://cocoflo.com/resources/driving-economic-growth-with-smart-city-innovations/" class=""> Source </a>
+                <a href="https://cocoflo.com/resources/driving-economic-growth-with-smart-city-innovations/" class="">
+                  Source </a>
               </span>
             </h3>
           </div>
@@ -1118,10 +1137,12 @@
               Pembahasan topik
             </span>
             <h2 class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl md:text-[40px] md:leading-[1.2]">
-             Pembahasan Topik
+              Pembahasan Topik
             </h2>
             <p class="text-base text-body-color dark:text-dark-6">
-              Indonesia bertekad untuk menjadi negara maju dan sejahtera pada tahun 2045,  Visi ini dikenal dengan istilah Generasi Emas 2045, yang mencerminkan aspirasi Indonesia untuk menjadi negara yang berdaya saing tinggi, memiliki ekonomi yang kuat, berkeadilan sosial, dan berkelanjutan.
+              Indonesia bertekad untuk menjadi negara maju dan sejahtera pada tahun 2045, Visi ini dikenal dengan
+              istilah Generasi Emas 2045, yang mencerminkan aspirasi Indonesia untuk menjadi negara yang berdaya saing
+              tinggi, memiliki ekonomi yang kuat, berkeadilan sosial, dan berkelanjutan.
             </p>
           </div>
         </div>
@@ -1324,7 +1345,8 @@
             <span class="mb-2 block text-lg font-semibold text-primary">
               Anggota Team Kami
             </span>
-            <h2 class="mb-3 text-3xl font-bold leading-[1.2] text-dark dark:text-white sm:text-4xl md:text-[40px] group-hover:tracking-[5px] transition-all duration-300 ease-in-out">
+            <h2
+              class="mb-3 text-3xl font-bold leading-[1.2] text-dark dark:text-white sm:text-4xl md:text-[40px] group-hover:tracking-[5px] transition-all duration-300 ease-in-out">
               VIORA TEAM
             </h2>
             <p class="text-base text-body-color dark:text-dark-6">
@@ -1628,7 +1650,7 @@
         lineColor: darkModeEnabled ? '#ffffff' : '#000000',
         borderColorHut: darkModeEnabled ? '#ffffff' : '#3C4048',
         pointBackground: [
-        '#059BFF', '#FF6384', '#4BC0C0', '#FFC234'
+          '#059BFF', '#FF6384', '#4BC0C0', '#FFC234'
         ],
         backgroundColor: darkModeEnabled
           ? 'rgba(255, 255, 255, 0.6)'
@@ -1722,14 +1744,14 @@
         lineColor: darkModeEnabled ? '#ffffff' : '#000000',
         borderColorHut: darkModeEnabled ? '#ffffff' : '#3C4048',
         pointBackground: [
-        '#059BFF', '#FF6384', '#4BC0C0', '#FFC234'
+          '#059BFF', '#FF6384', '#4BC0C0', '#FFC234'
         ],
         backgroundColor: darkModeEnabled
           ? 'rgba(255, 255, 255, 0.6)'
           : 'rgba(54, 162, 235, 0.6)'
       };
 
-      const myChartPie = document.getElementById('myChartPie'); 
+      const myChartPie = document.getElementById('myChartPie');
       if (myChart_2) myChart_2.destroy();
 
       myChart_2 = new Chart(myChartPie, {
@@ -1809,65 +1831,65 @@
     // Chart 3
     let myChart_3;
     function applyChartColors3() {
-    const darkModeEnabled = document.documentElement.classList.contains('dark');
-    const colors = {
-      lineColor: darkModeEnabled ? '#ffffff' : '#000000',
-      borderColorHut: darkModeEnabled ? '#ffffff' : '#3C4048',
-      pointBackground: ['#059BFF', '#FF6384', '#4BC0C0', '#FFC234'],
-      backgroundColor: darkModeEnabled ? 'rgba(255, 255, 255, 0.6)' : 'rgba(54, 162, 235, 0.6)'
-    };
+      const darkModeEnabled = document.documentElement.classList.contains('dark');
+      const colors = {
+        lineColor: darkModeEnabled ? '#ffffff' : '#000000',
+        borderColorHut: darkModeEnabled ? '#ffffff' : '#3C4048',
+        pointBackground: ['#059BFF', '#FF6384', '#4BC0C0', '#FFC234'],
+        backgroundColor: darkModeEnabled ? 'rgba(255, 255, 255, 0.6)' : 'rgba(54, 162, 235, 0.6)'
+      };
 
-  const myChartPie = document.getElementById('myChartDoughnut');
-  if (myChart_3) myChart_3.destroy();
+      const myChartPie = document.getElementById('myChartDoughnut');
+      if (myChart_3) myChart_3.destroy();
 
-  myChart_3 = new Chart(myChartPie, {
-    type: 'doughnut',
-    data: {
-      labels: ['Transportasi', 'Layanan Publik', 'Bisnis Lokal', 'Energi Cerdas'], 
-      datasets: [{
-        label: 'Pertumbuhan Ekonomi (%)',
-        data: [10, 15, 12, 20],
-        backgroundColor: colors.pointBackground,
-        borderColor: colors.borderColorHut,
-        borderWidth: 1,
-      }]
-    },
-    options: {
-      responsive: true,
-      plugins: {
-        legend: {
-          labels: {
-            color: colors.lineColor
-          },
-          display: true
+      myChart_3 = new Chart(myChartPie, {
+        type: 'doughnut',
+        data: {
+          labels: ['Transportasi', 'Layanan Publik', 'Bisnis Lokal', 'Energi Cerdas'],
+          datasets: [{
+            label: 'Pertumbuhan Ekonomi (%)',
+            data: [10, 15, 12, 20],
+            backgroundColor: colors.pointBackground,
+            borderColor: colors.borderColorHut,
+            borderWidth: 1,
+          }]
         },
-        tooltip: {
-          callbacks: {
-            label: function (tooltipItem) {
-              return tooltipItem.label + ': ' + tooltipItem.raw + '%';
+        options: {
+          responsive: true,
+          plugins: {
+            legend: {
+              labels: {
+                color: colors.lineColor
+              },
+              display: true
+            },
+            tooltip: {
+              callbacks: {
+                label: function (tooltipItem) {
+                  return tooltipItem.label + ': ' + tooltipItem.raw + '%';
+                }
+              }
+            },
+            datalabels: {
+              color: colors.lineColor,
+              anchor: 'center',
+              align: 'center',
+              formatter: (value) => value + '%',
+              font: { weight: 'bold' }
             }
+          },
+          animation: {
+            duration: 2000,
+            easing: 'easeOutQuart',
+            delay: (context) => context.dataIndex * 500
           }
         },
-        datalabels: {
-          color: colors.lineColor,
-          anchor: 'center',
-          align: 'center',
-          formatter: (value) => value + '%',
-          font: { weight: 'bold' }
-        }
-      },
-      animation: {
-        duration: 2000,
-        easing: 'easeOutQuart',
-        delay: (context) => context.dataIndex * 500
-      }
-    },
-    plugins: [ChartDataLabels]
-  });
-}
-applyChartColors3();
-const observer3 = new MutationObserver(applyChartColors3);
-observer3.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+        plugins: [ChartDataLabels]
+      });
+    }
+    applyChartColors3();
+    const observer3 = new MutationObserver(applyChartColors3);
+    observer3.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
 
   </script>
 </body>
